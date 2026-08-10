@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Croquis Trainer</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div id="home" class="container">
+
+        <h1>🎨 Croquis Trainer</h1>
+
+        <p>イラスト練習をサポートするアプリ</p>
+
+        <button id="startButton">▶ START</button>
+
+        <button id="presetButton">📚 プリセット</button>
+
+        <button id="albumButton">🖼 アルバム</button>
+
+        <button>⚙ 設定</button>
+
+    </div>
+
+<div id="startMenu" class="container" style="display: none;">
+
+    <h1>▶ 練習を始める</h1>
+
+    <button id="selectPresetButton">📚 プリセットから選ぶ</button>
+
+    <button id="newPracticeButton">➕ 新しく設定する</button>
+
+    <button id="startMenuBackButton">← 戻る</button>
+
+</div>
+
+<div id="preset" class="container" style="display: none;">
+
+    <h1>📚 プリセット</h1>
+
+    <div id="presetList"></div>
+
+    <button id="backButton">← 戻る</button>
+
+</div>
+
+<div id="practice" class="container" style="display: none;">
+
+    <h1>🎨 プリセット詳細</h1>
+
+    <h2 id="practiceName"></h2>
+
+    <p id="practiceCategory"></p>
+
+    <p id="practiceSubject"></p>
+
+    <p id="practiceTimer"></p>
+
+    <button id="startPracticeButton">▶ 練習開始</button>
+
+    <button id="editPracticeButton">▶ 編集</button>
+
+    <button id="practiceBackButton">← 戻る</button>
+
+</div>
+
+<div id="newPractice" class="container" style="display: none;">
+
+    <h1>➕ 新しく設定する</h1>
+
+    <p>カテゴリ</p>
+    <select id="newCategory">
+        <option>クロッキー</option>
+        <option>スケッチ</option>
+        <option>キャラクターデザイン</option>
+    </select>
+
+    <p>モチーフ</p>
+    <input id="newSubject" type="text">
+
+    <p>タイマー</p>
+    <select id="newTimerMode">
+        <option value="countdown">カウントダウン</option>
+        <option value="countup">カウントアップ</option>
+        <option value="none">タイマーなし</option>
+    </select>
+
+    <p>時間（秒）</p>
+    <input id="newTime" type="number">
+
+    <button id="createPracticeButton">▶ 練習開始</button>
+
+    <button id="newPracticeBackButton">← 戻る</button>
+
+</div>
+
+ <div id="editPractice" class="container" style="display: none;">
+
+    <h1>✏ プリセット編集</h1>
+
+    <label>✏ プリセット名</label>
+    <input id="editName" type="text">
+
+    <label>カテゴリ</label>
+    <input id="editCategory" type="text">
+
+    <label>モチーフ</label>
+    <input id="editSubject" type="text">
+
+    <label>タイマー</label>
+    <select id="editTimerMode">
+        <option value="countdown">カウントダウン</option>
+        <option value="countup">カウントアップ</option>
+        <option value="none">なし</option>
+    </select>
+
+    <label>時間（秒）</label>
+    <input id="editTime" type="number">
+
+    <button id="saveEditButton">💾 保存</button>
+
+    <button id="deletePresetButton">🗑 削除</button>
+
+    <button id="cancelEditButton">← 戻る</button>
+
+</div>
+
+<div id="album" class="container" style="display: none;">
+
+    <h1>🖼 アルバム</h1>
+
+    <div id="albumList"></div>
+
+    <button id="albumBackButton">← 戻る</button>
+
+</div>
+
+<div id="recordDetail" class="container" style="display: none;">
+
+    <h1>📋 練習記録</h1>
+
+    <h2 id="recordDetailName"></h2>
+
+    <p id="recordDetailCategory"></p>
+
+    <p id="recordDetailSubject"></p>
+
+    <p id="recordDetailTimer"></p>
+
+    <p id="recordDetailTime"></p>
+
+    <p id="recordDetailDate"></p>
+
+    <button id="deleteRecordButton">🗑 記録を削除</button>
+
+    <button id="recordDetailBackButton">← アルバムに戻る</button>
+
+</div>
+
+<div id="training" class="container" style="display: none;">
+
+    <h1 id="trainingTitle"></h1>
+
+    <p id="trainingTimer">00:00</p>
+
+    <button id="pauseButton">⏸ 一時停止</button>
+
+    <button id="skipButton">⏭ スキップ</button>
+
+    <button id="finishButton">■ 終了</button>
+
+</div>
+
+<div id="savePreset" class="container" style="display: none;">
+
+    <h1>📚 プリセット登録</h1>
+
+    <p>今回の練習をプリセットとして登録しますか？</p>
+
+    <button id="savePresetYes">はい</button>
+
+    <button id="savePresetNo">いいえ</button>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
