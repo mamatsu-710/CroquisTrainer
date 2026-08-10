@@ -1,5 +1,6 @@
 ## 『Croquis Trainer』
 
+アプリURL:https://mamatsu-710.github.io/CroquisTrainer/
 
 ## 概要
 絵の練習内容と実働時間を記録・管理するWebアプリ
