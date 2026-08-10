@@ -69,15 +69,18 @@
 ・アプリの設定画面の追加
 ・アプリ全体のUIの改善
 
-### ホーム画面
-![ホーム画面](images/home.png)
 
-### プリセット
-![プリセット一覧](images/preset.png_1)
-![プリセット詳細](images/preset.png_2)
 
-### 練習中
-![練習中](images/training.png)
+<h3>ホーム画面</h3>
+<img src="images/home.png" width="400">
 
-### アルバム
-![アルバム](images/album.png)
+<h3>プリセット一覧</h3>
+<img src="images/preset_1.png" width="400">
+<h3>プリセット詳細</h3>
+<img src="images/preset_2.png" width="400">
+
+<h3>練習中</h3>
+<img src="images/training.png" width="350">
+
+<h3>アルバム</h3>
+<img src="images/album.png" width="350">
