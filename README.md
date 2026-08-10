@@ -68,3 +68,16 @@
 ・タイマー設定を時・分・秒単位で指定できる機能
 ・アプリの設定画面の追加
 ・アプリ全体のUIの改善
+
+### ホーム画面
+![ホーム画面](images/home.png)
+
+### プリセット
+![プリセット一覧](images/preset.png_1)
+![プリセット詳細](images/preset.png_2)
+
+### 練習中
+![練習中](images/training.png)
+
+### アルバム
+![アルバム](images/album.png)
